@@ -1,0 +1,11 @@
+<a routerLink="user-profile">
+  user profile link
+</a>
+
+<ul>
+  <li *ngFor="let book of booksObservable | async">
+    {{ book.title }} by {{ book.author }} doc {{book.id}}
+  </li>
+</ul>
+<h1>this is from book info component</h1>
+<router-outlet></router-outlet>
